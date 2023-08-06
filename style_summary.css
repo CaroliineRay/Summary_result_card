@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: hsla(157, 63%, 45%, 0.695);
 }
 
 html, body {
@@ -30,7 +30,6 @@ h2 {
 }
 
 h3 {
-    width: 400px;
     margin: 0 auto;
     color: black;
     text-align: left;
@@ -47,7 +46,6 @@ h3 {
 .score_cover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     max-width: 400px;
-    height: auto;
     /*margin: auto; */
     padding: 10px 15px;
     border-bottom-left-radius: 30px;
@@ -76,7 +74,7 @@ div.circle p {
 
   .score {
     /*margin: auto; */
-    max-width: 350px;
+    /*max-width: 350px;*/
     border-radius: 10px;
     display: flex;
     padding: 2px 15px;
@@ -118,7 +116,7 @@ div.circle p {
     display: block;
     margin: 0 auto 15px;
     width: 350px;
-    padding: 17px 12px;
+    padding: 15px 12px;
     border-radius: 25px;
     border: none;
     text-align: center;
@@ -132,7 +130,7 @@ div.circle p {
     background-color: hsl(241, 81%, 54%);
   }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 700px) { /* change to the min-width: 375px; */ 
     body {
       display: flex;
       flex-direction: row;
@@ -144,17 +142,21 @@ div.circle p {
       flex-direction: row;
       box-shadow: 10px 30px 20px  hsl(221, 100%, 96%);
       border-radius: 30px;
-      /*width: 800px;
-      height: 500px;*/ 
     }
 
     .score_cover {
       border-radius: 30px;
-      height: 500px;
+       width: 350px;
     }
 
     button {
-      margin: 35px auto;
+      width: 100%;
+  
+    }
+
+    .div_score {
+      width: 350px;
+      padding: 0 30px;
     }
 
     .score {
@@ -164,6 +166,6 @@ div.circle p {
     }
 
     h3 {
-      padding-top: 10px;
+      padding-top: 5px;
     }
   }
