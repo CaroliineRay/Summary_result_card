@@ -142,7 +142,7 @@ div.circle p {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
 
-  @media screen and (min-width: 376px) { /* change to the min-width: 375px; */ 
+  @media screen and (min-width: 415px) { /* change to the min-width: 375px; */ 
     body {
       display: flex;
       flex-direction: row;
